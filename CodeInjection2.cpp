@@ -46,6 +46,7 @@ void InjectCode(DWORD dwPID)
 
 	CloseHandle(hThread);
 	CloseHandle(hProcess);
+
 }
 
 int main(int argc, char *argv[])
