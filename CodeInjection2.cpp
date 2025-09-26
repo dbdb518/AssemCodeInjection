@@ -28,7 +28,7 @@ void InjectCode(DWORD dwPID)
 	HANDLE hThread = NULL;
 	LPVOID pRemoteBuf[2] = { 0, };
 
-	hMode = GetModuleHandleA("kernel32.dll");d
+	hMode = GetModuleHandleA("kernel32.dll");
 
 	param.pFunc[0] = GetProcAddress(hMode, "LoadLibrary");
 	param.pFunc[1] = GetProcAddress(hMode, "GetProcAddress");
