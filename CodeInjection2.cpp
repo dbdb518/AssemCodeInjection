@@ -52,7 +52,7 @@ BOOL SetPrivilege(LPCTSTR lpszPrivilege, BOOL bEnablePrivilege)
 	// Enable the privilege or disable all privileges.
 	if (!AdjustTokenPrivileges(hToken,
 		FALSE,
-		&tp,
+		&tp, 
 		sizeof(TOKEN_PRIVILEGES),
 		(PTOKEN_PRIVILEGES)NULL,
 		(PDWORD)NULL))
