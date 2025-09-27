@@ -80,7 +80,7 @@ BOOL InjectCode(DWORD dwPID)
 
 	hMode = GetModuleHandleA("kernel32.dll");
 
-	param.pFunc[0] = GetProcAddress(hMode, "LoadLibrary");
+	param.pFunc[0] = GetProcAddress(hMode, "LoadLibraryA");
 	param.pFunc[1] = GetProcAddress(hMode, "GetProcAddress");
 
 	if (!(hProcess = OpenProcess(PROCESS_ALL_ACCESS, FALSE, dwPID)))
