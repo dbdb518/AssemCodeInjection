@@ -60,7 +60,7 @@ BOOL SetPrivilege(LPCTSTR lpszPrivilege, BOOL bEnablePrivilege)
 		printf("AdjustTokenPrivileges error: %u\n", GetLastError());
 		return FALSE;
 	}
-
+	 
 	if (GetLastError() == ERROR_NOT_ALL_ASSIGNED)
 	{
 		printf("The token does not have the specified privilege. \n");
